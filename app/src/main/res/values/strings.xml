@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ZooDemo</string>
+
+    <string name="venue_list_title">台北市立動物園</string>
+    <string name="plant_list_title">植物資料</string>
+
+    <string name="alias">別名</string>
+    <string name="introduction">簡介</string>
+    <string name="identification">辨認方式</string>
+    <string name="feature">功能性</string>
+    <string name="last_update_time">最後更新</string>
+
+    <string name="open_link">在網頁開啟</string>
+</resources>

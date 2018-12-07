@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_main"
+    app:startDestination="@id/venueList">
+
+    <fragment
+        android:id="@+id/venueList"
+        android:name="tw.lee.howard.zoodemo.venuelist.view.VenueListFragment"
+        android:label="@string/venue_list_title"
+        tools:layout="@layout/venuelist_fragment" >
+        <action
+            android:id="@+id/action_venueList_to_venueInfoFragment"
+            app:destination="@id/venueInfoFragment" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/venueInfoFragment"
+    android:name="tw.lee.howard.zoodemo.venuelist.view.VenueInfoFragment"
+    android:label=""
+    tools:layout="@layout/venueinfo_fragment" >
+    <action
+        android:id="@+id/action_venueInfo_to_plantInfoFragment"
+        app:destination="@id/plantInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/plantInfoFragment"
+        android:name="tw.lee.howard.zoodemo.plantlist.view.PlantInfoFragment"
+        android:label=""
+        tools:layout="@layout/plantinfo_fragment" />
+
+</navigation>
